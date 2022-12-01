@@ -21,7 +21,8 @@ RUN apt-get install -y mongodb-org
 RUN apt-get install -y yarn
 
 # Install PIP
-RUN easy_install pip
+# RUN easy_install pip
+RUN python -m pip install --upgrade pip
 
 
 ENV ENV_TYPE staging
